@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9f4e8">
+  <meta name="description" content="Программа лояльности цветового пространства «Спектр». События, задания и награды.">
+  <title>Спектр — от Искры до Спектра</title>
+  <link rel="icon" href="./icon.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./preview.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <header class="top"><div class="shell top-inner">
+    <a class="brand" href="#home" aria-label="Спектр — главная"><span class="brand-mark" aria-hidden="true">✦</span>спектр<span class="brand-dot">.</span></a>
+    <nav id="nav" aria-label="Основная навигация">
+      <a href="#events">Афиша</a><a href="#tasks">Задания</a><a href="#market">Маркет</a><a href="#news">Новости</a>
+    </nav>
+    <div class="top-actions" id="top-actions"><button class="button ink" data-open="login">Войти ↗</button></div>
+  </div></header>
+  <p class="connection" id="file-notice" hidden>Открыт файл index.html. Для входа, афиши и заданий запусти локальный сервер и <a href="http://127.0.0.1:3000/">открой демо «Спектра»</a>.</p>
+  <aside class="connection preview-banner" aria-label="Режим демо"><strong>Демо программы лояльности</strong> · тестовые данные. <button class="plain" type="button" data-open="login">Выбрать роль</button></aside>
+  <div id="connection" class="connection" hidden role="status"></div>
+  <main id="main" tabindex="-1">
+    <section class="shell hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Цветовое пространство</p>
+        <h1>От искры<br>до <em>спектра.</em></h1>
+        <p class="lead">Ходи на события, делай полезные дела и меняй Спектр-коины на подарки.</p>
+        <div class="actions"><a class="button ink" href="#events">Смотреть афишу ↗</a></div>
+      </div>
+      <div class="hero-visual"><div class="orbit"></div><img src="./hero.webp" alt="" width="720" height="720" fetchpriority="high"></div>
+    </section>
+  </main>
+  <footer class="foot"><div class="shell foot-inner"><a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">✦</span>спектр<span class="brand-dot">.</span></a><span>Цветовое пространство «Спектр»</span><button class="plain" data-open="support">Поддержка ↗</button></div></footer>
+  <dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-inner">
+    <div class="dialog-head"><h2 id="dialog-title"></h2><button id="close-dialog" class="icon-button" type="button" aria-label="Закрыть">×</button></div>
+    <div id="dialog-content"></div>
+  </div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="shell">Для входа и просмотра событий включите JavaScript.</p></noscript>
+</body>
+</html>
